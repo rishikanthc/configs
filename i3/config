@@ -191,6 +191,9 @@ bindsym XF86MonBrightnessUp exec "light -A 5"
 # decrease brightness
 bindsym XF86MonBrightnessDown exec "light -U 5"
 
+#bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+#bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+
 exec_always xinput set-prop "DELL07E6:00 06CB:76AF Touchpad" 304 1 
 exec --no-startup-id redshift
 
