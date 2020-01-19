@@ -1,6 +1,6 @@
 [options]
-font = Iosevka Custom Regular 13
-cell_height_scale = 2
+font = Iosevka Custom Regular 11
+cell_height_scale = 1.2
 
 [colors]
 
@@ -40,4 +40,4 @@ color14 = #51e2c2
 
 # white
 color7  = #4d4f5c
-color15 = #c6c6c6
+color15 = #c1c1c1

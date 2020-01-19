@@ -1,13 +1,15 @@
 call plug#begin('~/.vim/plugged')
 Plug 'rishikanthc/skyfall-vim'
 Plug 'itchyny/lightline.vim'
-Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'tpope/vim-sensible'
 Plug 'mengelbrecht/lightline-bufferline'
+Plug 'sheerun/vim-polyglot'
+Plug 'yggdroot/indentline'
 call plug#end()
 
 set t_Co=16
 syntax enable
+
 colorscheme skyfall
 
 set number
@@ -65,3 +67,9 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 
 " Show all open buffers and their status
 nmap <leader>bl :ls<CR>
+
+
+nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
+nnoremap <silent> <Leader>> :exe "vertical resize +5"<CR>
+nnoremap <silent> <Leader>< :exe "vertical resize -5"<CR>
